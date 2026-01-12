@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fam&Build Handyman - Your Trusted Local Business Partner</title>
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#64748b',
+                        accent: '#f59e0b'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+    <!-- Sticky Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-xl md:text-2xl font-bold text-primary">
+                🔨 Fam&Build Handyman
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#services" class="text-secondary hover:text-primary transition-colors">Services</a>
+                <a href="#about" class="text-secondary hover:text-primary transition-colors">About</a>
+                <a href="#contact" class="text-secondary hover:text-primary transition-colors">Contact</a>
+            </div>
+            <button id="mobile-menu-toggle" class="md:hidden text-secondary">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#services" class="block px-4 py-2 text-secondary hover:text-primary">Services</a>
+            <a href="#about" class="block px-4 py-2 text-secondary hover:text-primary">About</a>
+            <a href="#contact" class="block px-4 py-2 text-secondary hover:text-primary">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-50 to-blue-100 py-12 md:py-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                    Your Trusted Local Business Partner
+                </h1>
+                <p class="text-lg md:text-xl text-secondary mb-8 leading-relaxed">
+                    A local business ready to serve the Chicago community with personalized, accessible handyman services. Quality work, community values.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="bg-primary text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
+                        Get Started
+                    </a>
+                    <a href="#services" class="border-2 border-primary text-primary px-8 py-3 rounded-lg text-lg font-semibold hover:bg-primary hover:text-white transition-colors">
+                        Our Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Professional Handyman Services
+                </h2>
+                <p class="text-lg text-secondary max-w-2xl mx-auto">
+                    From small repairs to larger projects, we're here to help with all your home and business maintenance needs.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🔧</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">General Repairs</h3>
+                    <p class="text-secondary">Quick fixes and maintenance tasks to keep your property in top condition.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🏠</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Home Improvement</h3>
+                    <p class="text-secondary">Enhancement projects to improve functionality and value of your space.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">⚡</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Emergency Services</h3>
+                    <p class="text-secondary">Prompt response for urgent repairs when you need help fast.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🎨</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Interior Work</h3>
+                    <p class="text-secondary">Painting, drywall, and interior improvements to refresh your space.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🚪</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Installation Services</h3>
+                    <p class="text-secondary">Professional installation of fixtures, hardware, and appliances.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">📋</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Custom Projects</h3>
+                    <p class="text-secondary">Tailored solutions for your unique needs and specific requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                            Serving the Chicago Community
+                        </h2>
+                        <p class="text-lg text-secondary mb-6 leading-relaxed">
+                            Fam&Build Handyman is your local partner for professional handyman services in Chicago. We're committed to serving our community with personalized, accessible solutions that meet your specific needs.
+                        </p>
+                        <p class="text-lg text-secondary mb-6 leading-relaxed">
+                            Located in the heart of Chicago at 817 W Lakeside Pl, we understand the unique needs of local residents and businesses. Our community-focused approach ensures that every project receives the attention and care it deserves.
+                        </p>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                                <span class="text-white text-xl">📍</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Proudly Local</p>
+                                <p class="text-secondary">817 W Lakeside Pl, Chicago, IL 60640</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-primary to-blue-600 rounded-lg p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-6">Why Choose Us?</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">✓</span>
+                                <div>
+                                    <h4 class="font-semibold">Community Focused</h4>
+                                    <p class="text-blue-100">Local business serving local needs</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">✓</span>
+                                <div>
+                                    <h4 class="font-semibold">Personalized Service</h4>
+                                    <p class="text-blue-100">Tailored solutions for every customer</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">✓</span>
+                                <div>
+                                    <h4 class="font-semibold">Professional Quality</h4>
+                                    <p class="text-blue-100">Skilled workmanship you can trust</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                        Get In Touch
+                    </h2>
+                    <p class="text-lg text-secondary">
+                        Ready to start your next project? Contact us for a consultation.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                                    <span class="text-white text-xl">📞</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Phone</p>
+                                    <p class="text-secondary">(555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                                    <span class="text-white text-xl">📧</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Email</p>
+                                    <p class="text-secondary">info@fambuildhw.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                                    <span class="text-white text-xl">📍</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Location</p>
+                                    <p class="text-secondary">817 W Lakeside Pl<br>Chicago, IL 60640, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your Name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="your@email.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                                <input type="tel" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="(555) 123-4567">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Tell us about your project..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="text-xl font-bold mb-2">🔨 Fam&Build Handyman</div>
+                    <p class="text-gray-400">Your Trusted Local Business Partner</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400 mb-1">© 2026 Fam&Build Handyman</p>
+                    <p class="text-xs text-gray-500">Preview site by Nick Sheetz</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
